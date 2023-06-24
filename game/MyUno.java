@@ -47,7 +47,7 @@ public class MyUno extends UnoGame {
             // Check if the player has won the game
             if (validMoves.isEmpty()) {
                 turnManager.handleNoValidMoves(currentCard, currentPlayer);
-
+                currentPlayer.incrementScore(currentCard.getValue());
             } else {
                 turnManager.handleValidMoves(currentPlayer, validMoves);
                 currentPlayer.incrementScore(currentCard.getValue());

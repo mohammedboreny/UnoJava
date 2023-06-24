@@ -49,7 +49,6 @@ public abstract class Card implements Comparable<Card> {
     }
     @Override
     public int compareTo(Card otherCard) {
-        // Delegate the comparison to the subclasses
         return compareToCard(otherCard);
     }
 
